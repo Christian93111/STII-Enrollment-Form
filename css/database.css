@@ -1,0 +1,52 @@
+* {
+    font-family: sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn-center {
+    border: none;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 100%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.650);
+}
