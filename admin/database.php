@@ -18,7 +18,7 @@
     <table>
         <?php
         require '../server/main.php';
-        
+
         $sql = "SELECT id, s_fname, s_lname, s_mname, s_suffix, s_datebirth, s_placebirth, s_age, s_relationship, s_address, s_zipcode, s_email, s_cell, s_type, s_religion, p_fname, p_lname, p_mname, p_age, p_suffix, p_relationship, p_religion, p_address, p_zipcode, p_cell, p_email, p_work FROM tbl_fill";
         $result = $conn -> query($sql);
 
@@ -118,12 +118,9 @@
             </tr>
         </form>
 
-        <form action="edit.php" method="get">
-            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-            <tr>
-                <td colspan="2" class="btn-center"><button type="submit" onclick="window.location.href='?id='">Edit</button></td>
-            </tr>
-        </form>
+        <tr>
+            <td colspan="2" class="btn-center"><button type="submit" onclick="window.location.href='edit.php?u_id=<?php echo $row['id']; ?>'">Edit</button></td>
+        </tr>
 
         <tr>
             <td colspan="2" class="btn-center"><button type="button" onclick="window.location.href='../index.html'">Back</button></td>

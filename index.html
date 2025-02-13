@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/logo.png">
 </head>
 <body>
+    <div class="background"></div>
     <form action="server/submit.php" method="post">
         <img src="images/logo.png" alt="stii_logo">
         <h1>STII Enrollment Form</h1>
@@ -18,22 +19,19 @@
         </div> -->
 
         <table>
-            <tr>
-                <th colspan="2" style="text-align: center; padding-top: 30px; border: none;"><hr></th>
-            </tr>
 
             <tr>
                 <td colspan="2" style="text-align: center; padding: 30px; font-size: 20px;"><b>Student Information:</b></td>
             </tr>
 
             <tr>
-                <td>First Name: <input type="text" placeholder="John" name="s_fname" required></td>
-                <td>Last Name: <input type="text" placeholder="Doe" name="s_lname" required></td>
+                <td>First Name <input type="text" placeholder="John" name="s_fname" required></td>
+                <td>Last Name <input type="text" placeholder="Doe" name="s_lname" required></td>
             </tr>
 
             <tr>
-                <td>Middle Name: <input type="text" placeholder="Cruz" name="s_mname" required></td>
-                <td>Suffix: 
+                <td>Middle Name <input type="text" placeholder="Cruz" name="s_mname" required></td>
+                <td>Suffix 
                     <select name="s_suffix" required>
                         <option value="">Select</option>
                         <option value="None">None</option>
@@ -47,13 +45,13 @@
             </tr>
 
             <tr>
-                <td>Date of Birth: <input type="date" name="s_datebirth" required></td>
-                <td>Place of Birth: <input type="text" placeholder="Zamboanga City" name="s_placebirth" required></td>
+                <td>Date of Birth <input type="date" name="s_datebirth" required></td>
+                <td>Place of Birth <input type="text" placeholder="Zamboanga City" name="s_placebirth" required></td>
             </tr>
 
             <tr>
-                <td>Age: <input type="number" min="0" max="100" placeholder="18" name="s_age" required></td>
-                <td>Relationship:
+                <td>Age <input type="number" min="0" max="100" placeholder="18" name="s_age" required></td>
+                <td>Relationship
                     <select name="s_relationship" required>
                         <option value="">Select</option>
                         <option value="Single">Single</option>
@@ -63,24 +61,24 @@
             </tr>
 
             <tr>
-                <td>Address: <input type="text" placeholder="Zamboanga City" name="s_address" required></td>
-                <td>Zip Code: <input type="number" min="0" max="9999" placeholder="7000" name="s_zipcode" required></td>
+                <td>Address <input type="text" placeholder="Zamboanga City" name="s_address" required></td>
+                <td>Zip Code <input type="number" min="0" max="9999" placeholder="7000" name="s_zipcode" required></td>
             </tr>
 
             <tr>
-                <td>Email: <input type="email" placeholder="example@gmail.com" name="s_email" required></td>
+                <td>Email <input type="email" placeholder="example@gmail.com" name="s_email" required></td>
                 <td>Cell No. <input type="tel" pattern="^09\d{9}$" placeholder="09########" name="s_cell" required></td>
             </tr>
 
             <tr>
-                <td>Type of Student: 
+                <td>Type of Student 
                     <select name="type" required>
                         <option value="">Select</option>
                         <option value="Working">Working</option>
                         <option value="Full Time">Full Time</option>
                     </select>
                 </td>
-                <td>Religion: <input type="text" name="s_religion" placeholder="Catholic" required></td>
+                <td>Religion <input type="text" name="s_religion" placeholder="Catholic" required></td>
             </tr>
 
             <tr>
@@ -92,17 +90,17 @@
             </tr>
 
             <tr>
-                <td>First Name: <input type="text" placeholder="John" name="p_fname" required></td>
-                <td>Last Name: <input type="text" placeholder="Doe" name="p_lname" required></td>
+                <td>First Name <input type="text" placeholder="John" name="p_fname" required></td>
+                <td>Last Name <input type="text" placeholder="Doe" name="p_lname" required></td>
             </tr>
 
             <tr>
-                <td>Middle Name: <input type="text" placeholder="Cruz" name="p_mname" required></td>
-                <td>Age: <input type="number" min="0" max="100" placeholder="30" name="p_age" required></td>
+                <td>Middle Name <input type="text" placeholder="Cruz" name="p_mname" required></td>
+                <td>Age <input type="number" min="0" max="100" placeholder="30" name="p_age" required></td>
             </tr>
 
             <tr>
-                <td>Suffix:
+                <td>Suffix
                     <select name="p_suffix" required>
                         <option value="">Select</option>
                         <option value="None">None</option>
@@ -113,7 +111,7 @@
                         <option value="3rd">III</option>
                     </select>
                 </td>
-                <td>Relationship:
+                <td>Relationship
                     <select name="p_relationship" required>
                         <option value="">Select</option>
                         <option value="Single">Single</option>
@@ -123,18 +121,18 @@
             </tr>
             
             <tr>
-                <td>Religion: <input type="text" placeholder="Catholic" name="p_religion" required></td>
-                <td>Address: <input type="text" placeholder="Zamboanga City" name="p_address" required></td>
+                <td>Religion <input type="text" placeholder="Catholic" name="p_religion" required></td>
+                <td>Address <input type="text" placeholder="Zamboanga City" name="p_address" required></td>
             </tr>
 
             <tr>
-                <td>Zip Code: <input type="number" placeholder="7000" name="p_zipcode" required></td>
+                <td>Zip Code <input type="number" placeholder="7000" name="p_zipcode" required></td>
                 <td>Cell No. <input type="tel" pattern="^09\d{9}$" placeholder="09########" name="p_cell" required></td>
             </tr>
 
             <tr>
-                <td>Email: <input type="email" placeholder="example@gmail.com" name="p_email" required></td>
-                <td>Occupation: <input type="text" placeholder="Government Work" name="p_work" required></td>
+                <td>Email <input type="email" placeholder="example@gmail.com" name="p_email" required></td>
+                <td>Occupation <input type="text" placeholder="Government Work" name="p_work" required></td>
             </tr>
 
             <tr>

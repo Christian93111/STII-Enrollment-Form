@@ -8,7 +8,16 @@ if (isset($_GET['delete'])) {
     $sql = "DELETE FROM tbl_fill WHERE id= $delete";
 
     if ($conn -> query($sql) === TRUE) {
-        header('location: ../admin/database.php');
+        echo "
+
+        <script>
+
+        window.alert('Record Deleted Successfully');
+        window.location.href='../admin/database.php';
+
+        </script>
+
+        ";
     } 
 
     else {

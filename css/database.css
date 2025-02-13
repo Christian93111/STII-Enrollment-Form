@@ -1,5 +1,13 @@
 * {
     font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .top {
@@ -7,12 +15,18 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
 }
 
 table {
+    background-color: rgba(0, 0, 0, 0.650);
     margin: auto;
     width: 80%;
+    border-radius: 10px;
     border-collapse: collapse;
 }
 
@@ -22,14 +36,8 @@ h1 {
 }
 
 td, th {
-    border: 1px solid black;
     text-align: center;
     padding: 10px;
-}
-
-img {
-    height: 100px;
-    width: 100px;
 }
 
 .btn-center {

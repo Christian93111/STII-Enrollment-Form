@@ -3,7 +3,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
 form {
+    color: white;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -12,6 +25,8 @@ form {
 }
 
 table {
+    background-color: rgba(0, 0, 0, 0.650);
+    border-radius: 10px;
     width: 80%;
     border-collapse: collapse;
 }
@@ -25,11 +40,6 @@ td, th {
     width: 50%;
 }
 
-img {
-    height: 100px;
-    width: 100px;
-}
-
 /* .photo {
     text-align: center;
     border: 3px dashed black;
@@ -38,7 +48,7 @@ img {
     line-height: 100px;
 } */
 
-input[type="file"]::file-selector-button {
+/* input[type="file"]::file-selector-button {
     display: block;
     background-color: black;
     color: white;
@@ -46,20 +56,18 @@ input[type="file"]::file-selector-button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 input[type="file"]::file-selector-button:hover {
     background-color: rgba(0, 0, 0, 0.650);
 }
 
-input[type="text"], input[type="number"] , input[type="tel"], input[type="date"], input[type="email"] {
+input[type="text"], input[type="number"] , input[type="tel"], input[type="date"], input[type="email"], select {
+    background-color: #f6f6f6be;
+    border-radius: 5px;
+    border: none;
     width: 100%;
-    padding: 5px;
-}
-
-select {
-    width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .btn-center {

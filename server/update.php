@@ -1,7 +1,8 @@
 <?php
 
 require 'main.php';
-if(isset($_POST['submit'])) {
+if(isset($_POST['update'])) {
+
     // ---------- Student Information ----------
 
     $sfname = $_POST['s_fname'];
@@ -20,6 +21,7 @@ if(isset($_POST['submit'])) {
     $sreligion = $_POST['s_religion'];
 
     // ---------- Parent & Guardian Information ----------
+
     $pfname = $_POST['p_fname'];
     $plname = $_POST['p_lname'];
     $pmname = $_POST['p_mname'];
@@ -33,10 +35,21 @@ if(isset($_POST['submit'])) {
     $pcell = $_POST['p_cell'];
     $preligion = $_POST['p_religion'];
 
+    // ---------------------------------------------------
+
     $sql = "UPDATE tbl_fill SET s_fname = '$sfname', s_lname = '$slname', s_mname = '$smname', s_suffix = '$ssuffix' , s_datebirth = '$sdatebirth', s_placebirth = '$splacebirth', s_age = '$sage', s_relationship = '$srelationship', s_address = '$saddress', s_zipcode = '$szipcode', s_email = '$semail', s_cell = '$scell', s_type = '$stype', s_religion = '$sreligion', p_fname = '$pfname', p_lname = '$plname', p_mname = '$pmname', p_age = '$page', p_suffix = '$psuffix', p_relationship = '$prelationship', p_religion = '$preligion', p_address = '$paddress', p_zipcode = '$pzipcode', p_cell = '$pcell', p_email = '$pemail', p_work = '$pwork'";
 
     if ($conn -> query($sql) === TRUE) {
-        header('Location: ../admin/database.php');
+        echo "
+
+        <script>
+
+        window.alert('Record Update Successfully');
+        window.location.href='../admin/database.php';
+
+        </script>
+
+        ";
     } 
 
     else {
