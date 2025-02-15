@@ -18,7 +18,9 @@ body {
 }
 
 .box {
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.650);
+    border-radius: 10px;
+    padding: 50px;
     animation: fadein 1s ease-in-out;
 }
 
@@ -43,7 +45,7 @@ button {
     border-radius: 10px;
     padding: 10px;
     font-size: 100%;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 

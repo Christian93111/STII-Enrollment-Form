@@ -48,12 +48,12 @@
                 <td>Suffix: 
                     <select name="s_suffix" required>
                         <option value="">Select</option>
-                        <option value="None" <?php if ($row['s_suffix'] == 'None') echo 'selected'; ?>>None</option>
-                        <option value="JR" <?php if ($row['s_suffix'] == 'JR') echo 'selected'; ?>>Jr</option>
-                        <option value="SR" <?php if ($row['s_suffix'] == 'SR') echo 'selected'; ?>>Sr</option>
-                        <option value="1st" <?php if ($row['s_suffix'] == '1st') echo 'selected'; ?>>I</option>
-                        <option value="2nd" <?php if ($row['s_suffix'] == '2nd') echo 'selected'; ?>>II</option>
-                        <option value="3rd" <?php if ($row['s_suffix'] == '3rd') echo 'selected'; ?>>III</option>
+                        <option value="None" <?php if ($row['s_suffix']) echo 'selected'; ?>>None</option>
+                        <option value="Sr" <?php if ($row['s_suffix']) echo 'selected'; ?>>Sr</option>
+                        <option value="Jr" <?php if ($row['s_suffix']) echo 'selected'; ?>>Jr</option>
+                        <option value="I" <?php if ($row['s_suffix']) echo 'selected'; ?>>I</option>
+                        <option value="II" <?php if ($row['s_suffix']) echo 'selected'; ?>>II</option>
+                        <option value="III" <?php if ($row['s_suffix']) echo 'selected'; ?>>III</option>
                     </select>
                 </td>
             </tr>
@@ -117,12 +117,12 @@
                 <td>Suffix:
                     <select name="p_suffix" required>
                         <option value="">Select</option>
-                        <option value="None" <?php if ($row['p_suffix'] == 'None') echo 'selected'; ?>>None</option>
-                        <option value="JR" <?php if ($row['p_suffix'] == 'JR') echo 'selected'; ?>>JR</option>
-                        <option value="SR" <?php if ($row['p_suffix'] == 'SR') echo 'selected'; ?>>SR</option>
-                        <option value="1st" <?php if ($row['p_suffix'] == '1st') echo 'selected'; ?>>1st</option>
-                        <option value="2nd" <?php if ($row['p_suffix'] == '2nd') echo 'selected'; ?>>2nd</option>
-                        <option value="3rd" <?php if ($row['p_suffix'] == '3rd') echo 'selected'; ?>>3rd</option>
+                        <option value="None" <?php if ($row['p_suffix']) echo 'selected'; ?>>None</option>
+                        <option value="Sr" <?php if ($row['p_suffix']) echo 'selected'; ?>>Sr</option>
+                        <option value="Jr" <?php if ($row['p_suffix']) echo 'selected'; ?>>Jr</option>
+                        <option value="I" <?php if ($row['p_suffix']) echo 'selected'; ?>>I</option>
+                        <option value="II" <?php if ($row['p_suffix']) echo 'selected'; ?>>II</option>
+                        <option value="III" <?php if ($row['p_suffix']) echo 'selected'; ?>>III</option>
                     </select>
                 </td>
                 <td>Relationship:
