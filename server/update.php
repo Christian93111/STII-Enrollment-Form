@@ -3,6 +3,8 @@
 require 'main.php';
 if(isset($_POST['update'])) {
 
+    $id = $_POST['id'];
+
     // ---------- Student Information ----------
 
     $sfname = $_POST['s_fname'];
@@ -37,7 +39,7 @@ if(isset($_POST['update'])) {
 
     // ---------------------------------------------------
 
-    $sql = "UPDATE tbl_fill SET s_fname = '$sfname', s_lname = '$slname', s_mname = '$smname', s_suffix = '$ssuffix' , s_datebirth = '$sdatebirth', s_placebirth = '$splacebirth', s_age = '$sage', s_relationship = '$srelationship', s_address = '$saddress', s_zipcode = '$szipcode', s_email = '$semail', s_cell = '$scell', s_type = '$stype', s_religion = '$sreligion', p_fname = '$pfname', p_lname = '$plname', p_mname = '$pmname', p_age = '$page', p_suffix = '$psuffix', p_relationship = '$prelationship', p_religion = '$preligion', p_address = '$paddress', p_zipcode = '$pzipcode', p_cell = '$pcell', p_email = '$pemail', p_work = '$pwork'";
+    $sql = "UPDATE tbl_fill SET s_fname = '$sfname', s_lname = '$slname', s_mname = '$smname', s_suffix = '$ssuffix' , s_datebirth = '$sdatebirth', s_placebirth = '$splacebirth', s_age = '$sage', s_relationship = '$srelationship', s_address = '$saddress', s_zipcode = '$szipcode', s_email = '$semail', s_cell = '$scell', s_type = '$stype', s_religion = '$sreligion', p_fname = '$pfname', p_lname = '$plname', p_mname = '$pmname', p_age = '$page', p_suffix = '$psuffix', p_relationship = '$prelationship', p_religion = '$preligion', p_address = '$paddress', p_zipcode = '$pzipcode', p_cell = '$pcell', p_email = '$pemail', p_work = '$pwork' WHERE id= '$id'";
 
     if ($conn -> query($sql) === TRUE) {
         echo "

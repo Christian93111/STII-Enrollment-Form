@@ -119,11 +119,11 @@
         </form>
 
         <tr>
-            <td colspan="2" class="btn-center"><button type="submit" onclick="window.location.href='edit.php?u_id=<?php echo $row['id']; ?>'">Edit</button></td>
+            <td colspan="2" class="btn-center"><button type="submit" onclick="window.location.href='edit.php?e_id=<?php echo $row['id']; ?>'">Edit</button></td>
         </tr>
 
         <tr>
-            <td colspan="2" class="btn-center"><button type="button" onclick="window.location.href='../index.html'">Back</button></td>
+            <td colspan="2" class="btn-center"><button type="button" onclick="window.location.href='../enroll.html'">Back</button></td>
         </tr>
 
         <?php

@@ -3,142 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STII Enrollment Form</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logo.png">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/message.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
-    <form action="server/submit.php" method="post">
+    <div class="box">
         <img src="images/logo.png" alt="stii_logo">
-        <h1>STII Enrollment Form</h1>
+            <h1>Welome To STII Enrollment Website</h1>
+            <p>Press the <b>"Enroll"</b> button to start enrollment</p>
 
-        <!-- <div class="photo">
-            <label>2x2 Photo</label>
-            <input type="file" accept="image/*">
-        </div> -->
-
-        <table>
-
-            <tr>
-                <td colspan="2" style="text-align: center; padding: 30px; font-size: 20px;"><b>Student Information:</b></td>
-            </tr>
-
-            <tr>
-                <td>First Name <input type="text" placeholder="John" name="s_fname" required></td>
-                <td>Last Name <input type="text" placeholder="Doe" name="s_lname" required></td>
-            </tr>
-
-            <tr>
-                <td>Middle Name <input type="text" placeholder="Cruz" name="s_mname" required></td>
-                <td>Suffix 
-                    <select name="s_suffix" required>
-                        <option value="">Select</option>
-                        <option value="None">None</option>
-                        <option value="JR">Jr</option>
-                        <option value="SR">Sr</option>
-                        <option value="1st">I</option>
-                        <option value="2nd">II</option>
-                        <option value="3rd">III</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Date of Birth <input type="date" name="s_datebirth" required></td>
-                <td>Place of Birth <input type="text" placeholder="Zamboanga City" name="s_placebirth" required></td>
-            </tr>
-
-            <tr>
-                <td>Age <input type="number" min="0" max="100" placeholder="18" name="s_age" required></td>
-                <td>Relationship
-                    <select name="s_relationship" required>
-                        <option value="">Select</option>
-                        <option value="Single">Single</option>
-                        <option value="Married">Married</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Address <input type="text" placeholder="Zamboanga City" name="s_address" required></td>
-                <td>Zip Code <input type="number" min="0" max="9999" placeholder="7000" name="s_zipcode" required></td>
-            </tr>
-
-            <tr>
-                <td>Email <input type="email" placeholder="example@gmail.com" name="s_email" required></td>
-                <td>Cell No. <input type="tel" pattern="^09\d{9}$" placeholder="09########" name="s_cell" required></td>
-            </tr>
-
-            <tr>
-                <td>Type of Student 
-                    <select name="type" required>
-                        <option value="">Select</option>
-                        <option value="Working">Working</option>
-                        <option value="Full Time">Full Time</option>
-                    </select>
-                </td>
-                <td>Religion <input type="text" name="s_religion" placeholder="Catholic" required></td>
-            </tr>
-
-            <tr>
-                <th colspan="2" style="text-align: center; padding-top: 30px; border: none;"><hr></th>
-            </tr>
-
-            <tr>
-                <td colspan="2" style="text-align: center; padding: 30px; font-size: 20px;"><b>Parent/Guardian Information:</b></td>
-            </tr>
-
-            <tr>
-                <td>First Name <input type="text" placeholder="John" name="p_fname" required></td>
-                <td>Last Name <input type="text" placeholder="Doe" name="p_lname" required></td>
-            </tr>
-
-            <tr>
-                <td>Middle Name <input type="text" placeholder="Cruz" name="p_mname" required></td>
-                <td>Age <input type="number" min="0" max="100" placeholder="30" name="p_age" required></td>
-            </tr>
-
-            <tr>
-                <td>Suffix
-                    <select name="p_suffix" required>
-                        <option value="">Select</option>
-                        <option value="None">None</option>
-                        <option value="JR">Jr</option>
-                        <option value="SR">Sr</option>
-                        <option value="1st">I</option>
-                        <option value="2nd">II</option>
-                        <option value="3rd">III</option>
-                    </select>
-                </td>
-                <td>Relationship
-                    <select name="p_relationship" required>
-                        <option value="">Select</option>
-                        <option value="Single">Single</option>
-                        <option value="Married">Married</option>
-                    </select>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>Religion <input type="text" placeholder="Catholic" name="p_religion" required></td>
-                <td>Address <input type="text" placeholder="Zamboanga City" name="p_address" required></td>
-            </tr>
-
-            <tr>
-                <td>Zip Code <input type="number" placeholder="7000" name="p_zipcode" required></td>
-                <td>Cell No. <input type="tel" pattern="^09\d{9}$" placeholder="09########" name="p_cell" required></td>
-            </tr>
-
-            <tr>
-                <td>Email <input type="email" placeholder="example@gmail.com" name="p_email" required></td>
-                <td>Occupation <input type="text" placeholder="Government Work" name="p_work" required></td>
-            </tr>
-
-            <tr>
-                <td colspan="5" class="btn-center" style="padding-top: 50px;"><button type="submit" name="submit">Submit</button></td>
-            </tr>
-        </table>
-    </form>
-
+            <div class="center">
+                <button type="button" onclick="window.location.href='enroll.html'">Enroll</button>
+            </div>
+    </div>
 </body>
 </html>

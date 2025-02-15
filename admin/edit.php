@@ -18,8 +18,8 @@
             <?php
             require '../server/main.php';
 
-            $u_id = $_GET['u_id'];
-            $sql = "SELECT id, s_fname, s_lname, s_mname, s_suffix, s_datebirth, s_placebirth, s_age, s_relationship, s_address, s_zipcode, s_email, s_cell, s_type, s_religion, p_fname, p_lname, p_mname, p_age, p_suffix, p_relationship, p_religion, p_address, p_zipcode, p_cell, p_email, p_work FROM tbl_fill WHERE id= $u_id";
+            $id = $_GET['e_id'];
+            $sql = "SELECT id, s_fname, s_lname, s_mname, s_suffix, s_datebirth, s_placebirth, s_age, s_relationship, s_address, s_zipcode, s_email, s_cell, s_type, s_religion, p_fname, p_lname, p_mname, p_age, p_suffix, p_relationship, p_religion, p_address, p_zipcode, p_cell, p_email, p_work FROM tbl_fill WHERE id= $id";
             $result = $conn -> query($sql);
 
             if ($result -> num_rows > 0) {
@@ -149,12 +149,10 @@
                 <td>Occupation: <input type="text" placeholder="Government Work" name="p_work" value="<?php echo $row['p_work']; ?>" required></td>
             </tr>
             
-            <form action="../server/update.php" method="post">
-                <tr>
-                    <input type="hidden" name="update" value="<?php echo $e_id['id']; ?>">
-                    <td colspan="2" class="btn-center" style="padding-top: 50px;"><button type="submit">Update</button></td>
-                </tr>
-            </form>
+            <tr>
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <td colspan="2" class="btn-center" style="padding-top: 50px;"><button type="submit" name="update">Update</button></td>
+            </tr>
 
             <tr>
                 <td colspan="2" class="btn-center"><button type="button" onclick="window.location.href='database.php'">Back</button></td>

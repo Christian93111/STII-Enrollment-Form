@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 body {
@@ -10,10 +11,15 @@ body {
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .box {
     padding: 10px;
+    animation: fadein 1s ease-in-out;
 }
 
 h1, p{
@@ -39,4 +45,18 @@ button {
     font-size: 100%;
     width: 50%;
     text-align: center;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.650);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
