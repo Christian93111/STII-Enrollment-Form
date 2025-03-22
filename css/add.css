@@ -3,12 +3,12 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 img {
     height: 100px;
@@ -22,6 +22,10 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+h1 {
+    color: black;
 }
 
 table {
@@ -54,7 +58,6 @@ input[type="text"], input[type="number"] , input[type="tel"], input[type="date"]
 
 button {
     display: block;
-    margin: auto;
     background-color: blue;
     color: white;
     border-radius: 10px;
@@ -62,6 +65,10 @@ button {
     width: 50%;
     padding: 10px;
     font-size: 100%;
+}
+
+.btn-bottom {
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -72,5 +79,9 @@ button:hover {
 
     table {
         width: 100%;
+    }
+
+    button {
+        padding: 15px
     }
 }

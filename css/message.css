@@ -24,9 +24,16 @@ body {
     animation: fadein 1s ease-in-out;
 }
 
-h1, p{
+p {
+    font-size: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: large;
+    text-align: center;
+    padding: 10px;
 }
 
 img {
@@ -39,7 +46,7 @@ img {
 }
 
 button {
-    background-color: black;
+    background-color: blue;
     color: white;
     border: none;
     border-radius: 10px;
@@ -50,7 +57,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.650);
+    background-color: rgba(0, 0, 255, 0.365);
 }
 
 @keyframes fadein {

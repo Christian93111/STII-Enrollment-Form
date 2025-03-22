@@ -3,13 +3,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 img {
     height: 100px;
     width: 100px;
@@ -32,6 +25,7 @@ table {
 }
 
 h1 {
+    color: black;
     text-align: center;
 }
 
